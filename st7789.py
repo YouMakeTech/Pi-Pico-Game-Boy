@@ -150,3 +150,8 @@ class ST7789(framebuf.FrameBuffer):
     
     def load_image(self,filename):
         open(filename, "rb").readinto(self.buffer)
+        
+    def get_pixel(self, x, y):
+        byte1=self.buffer[2*(y*self.width+x)];
+        byte2=self.buffer[2*(y*self.width+x)+1];
+        return byte2*256+byte1
