@@ -1,4 +1,4 @@
-# st7789.py by YouMakeTech
+# st7789.py by Vincent Mistler for YouMakeTech
 # MicroPython ST7789 OLED driver, SPI interfaces for the Raspberry Pi Pico Game Boy
 
 from micropython import const

@@ -1,4 +1,4 @@
-# tetris.py by YouMakeTech
+# tetris.py by Vincent Mistler for YouMakeTech
 # Tetris game for the Raspberry Pi Pico Game Boy
 
 from micropython import const

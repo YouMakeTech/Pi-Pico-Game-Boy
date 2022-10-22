@@ -1,4 +1,4 @@
-# GameOfLife.py by YouMakeTech
+# GameOfLife.py by Matthieu Mistler
 # John Conway's Game of Life for the Raspberry Pi Pico Game Boy
 
 from PicoGameBoy import PicoGameBoy
