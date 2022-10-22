@@ -30,15 +30,19 @@ Code for the Raspberry Pi Pico Game Boy
   or to a .bin file:
   python png2fb.py tetris_title.png tetris_title.bin
 - To display a sprite on the Raspberry Pi Pico GameBoy:
-  >>> from PicoGameBoy import PicoGameBoy
-  >>> pgb=PicoGameBoy()
-  >>> corner=bytearray(<copy & paste the output of "python png2fb.py corner_12x12.png" here>)
-  >>> pgb.add_sprite(corner,12,12) # load corner_12x12.png data into sprite #0. sprite #0 is 12x12 pixels
-  >>> pgb.fill(0)                  # fill the screen in black
-  >>> pgp.sprite(0,120,120)        # display the sprite in the middle
-  >>> pgp.show()                   # transfer the frame buffer to the actual screen over the SPI bus
+```
+>>> from PicoGameBoy import PicoGameBoy
+>>> pgb=PicoGameBoy()
+>>> corner=bytearray(<copy & paste the output of "python png2fb.py corner_12x12.png" here>)
+>>> pgb.add_sprite(corner,12,12) # load corner_12x12.png data into sprite #0. sprite #0 is 12x12 pixels
+>>> pgb.fill(0)                  # fill the screen in black
+>>> pgp.sprite(0,120,120)        # display the sprite in the middle
+>>> pgp.show()                   # transfer the frame buffer to the actual screen over the SPI bus
+```
 - To display a full size image (240x240 pixels) from a .bin file:
-  >>> from PicoGameBoy import PicoGameBoy
-  >>> pgb=PicoGameBoy()
-  >>> pgb.load_image("tetris_title.bin") # load the .bin file into the framebuffer
-  >>> pgb.show()
+```
+>>> from PicoGameBoy import PicoGameBoy
+>>> pgb=PicoGameBoy()
+>>> pgb.load_image("tetris_title.bin") # load the .bin file into the framebuffer
+>>> pgb.show()
+```
