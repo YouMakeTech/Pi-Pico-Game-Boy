@@ -24,11 +24,17 @@ Code for the Raspberry Pi Pico Game Boy
 - In GIMP, export the image as a .PNG file: File>Export as...
 - In the "Export image as PNG" window, replace "automatic pixel format" by "8bpc RGB" and click Export
 - Open a command line and install Pillow for Python:
-  pip install pillow
+```
+pip install pillow
+```
 - Convert the image to a bytearray:
-  python png2fb.py corner_12x12.png
+```
+python png2fb.py corner_12x12.png
+```
   or to a .bin file:
-  python png2fb.py tetris_title.png tetris_title.bin
+```
+python png2fb.py tetris_title.png tetris_title.bin
+```
 - To display a sprite on the Raspberry Pi Pico GameBoy:
 ```
 >>> from PicoGameBoy import PicoGameBoy
